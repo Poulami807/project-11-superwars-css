@@ -1,4 +1,40 @@
-.footer{
-  margin-left : 80px;
-  font-size : 18px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+    width:60%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap:100px;
+}
+#heroes, #villains{
+  display: flex;
+  gap: 20px;
+ }
+
+ .hero, .villain {
+  border: 2px solid #e6e6e6;
+  border-radius: 5px ;
+  box-shadow: 2px 2px 5px 1px gainsboro;
+  padding: 20px;
+ }
+.title{
+  font-size: large;
+  text-align: center;
+}
+.score, #scores{
+  text-align: center;
+  font-size: 50px;
+}
+#scores{
+  width: 100px;
 }
